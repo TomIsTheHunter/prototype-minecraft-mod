@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "driftshale",
+  "version": "${version}",
+  "name": "Driftshale",
+  "description": "Adds Driftshale stone and nature blocks.",
+  "authors": ["TomIsTheHunter"],
+  "license": "MIT",
+  "icon": "assets/driftshale/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.driftshale.DriftshaleMod"],
+    "client": ["com.driftshale.DriftshaleClient"],
+    "fabric-datagen": ["com.driftshale.datagen.DriftshaleDataGenerator"]
+  },
+  "mixins": [],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "fabric-api": "*",
+    "minecraft": "~1.21.1",
+    "java": ">=21"
+  }
+}
