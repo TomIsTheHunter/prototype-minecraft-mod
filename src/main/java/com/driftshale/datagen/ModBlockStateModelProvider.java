@@ -15,66 +15,69 @@ public class ModBlockStateModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator gen) {
-        // Nature blocks
+        // --- Nature blocks ---
+        // Bird Poop: multiface block (like glow lichen)
         gen.registerMultifaceBlock(ModBlocks.BIRD_POOP);
-        gen.registerTintableCrossBlockState(ModBlocks.RED_ALGAE, BlockStateModelGenerator.TintType.NOT_TINTED);
+        // Red Algae: cross plant (same model for all waterlogged states)
+        gen.registerTintableCross(ModBlocks.RED_ALGAE, BlockStateModelGenerator.TintType.NOT_TINTED);
 
-        // Base Driftshale
-        gen.registerSimpleCubeAll(ModBlocks.DRIFTSHALE);
-        gen.registerStairs(ModBlocks.DRIFTSHALE_STAIRS, TexturedModel.CUBE_ALL.get(ModBlocks.DRIFTSHALE));
-        gen.registerSlab(ModBlocks.DRIFTSHALE_SLAB, ModBlocks.DRIFTSHALE_STAIRS, TexturedModel.CUBE_ALL.get(ModBlocks.DRIFTSHALE));
+        // --- Base Driftshale ---
+        gen.registerCubeAllModelTexturePool(ModBlocks.DRIFTSHALE)
+                .stairs(ModBlocks.DRIFTSHALE_STAIRS)
+                .slab(ModBlocks.DRIFTSHALE_SLAB);
 
-        // Cobbled Driftshale
-        gen.registerSimpleCubeAll(ModBlocks.COBBLED_DRIFTSHALE);
-        gen.registerStairs(ModBlocks.COBBLED_DRIFTSHALE_STAIRS, TexturedModel.CUBE_ALL.get(ModBlocks.COBBLED_DRIFTSHALE));
-        gen.registerSlab(ModBlocks.COBBLED_DRIFTSHALE_SLAB, ModBlocks.COBBLED_DRIFTSHALE_STAIRS, TexturedModel.CUBE_ALL.get(ModBlocks.COBBLED_DRIFTSHALE));
+        // --- Cobbled Driftshale ---
+        gen.registerCubeAllModelTexturePool(ModBlocks.COBBLED_DRIFTSHALE)
+                .stairs(ModBlocks.COBBLED_DRIFTSHALE_STAIRS)
+                .slab(ModBlocks.COBBLED_DRIFTSHALE_SLAB);
 
-        // Polished Driftshale
-        gen.registerSimpleCubeAll(ModBlocks.POLISHED_DRIFTSHALE);
-        gen.registerStairs(ModBlocks.POLISHED_DRIFTSHALE_STAIRS, TexturedModel.CUBE_ALL.get(ModBlocks.POLISHED_DRIFTSHALE));
-        gen.registerSlab(ModBlocks.POLISHED_DRIFTSHALE_SLAB, ModBlocks.POLISHED_DRIFTSHALE_STAIRS, TexturedModel.CUBE_ALL.get(ModBlocks.POLISHED_DRIFTSHALE));
+        // --- Polished Driftshale ---
+        gen.registerCubeAllModelTexturePool(ModBlocks.POLISHED_DRIFTSHALE)
+                .stairs(ModBlocks.POLISHED_DRIFTSHALE_STAIRS)
+                .slab(ModBlocks.POLISHED_DRIFTSHALE_SLAB);
 
-        // Driftshale Bricks
-        gen.registerSimpleCubeAll(ModBlocks.DRIFTSHALE_BRICKS);
-        gen.registerStairs(ModBlocks.DRIFTSHALE_BRICKS_STAIRS, TexturedModel.CUBE_ALL.get(ModBlocks.DRIFTSHALE_BRICKS));
-        gen.registerSlab(ModBlocks.DRIFTSHALE_BRICKS_SLAB, ModBlocks.DRIFTSHALE_BRICKS_STAIRS, TexturedModel.CUBE_ALL.get(ModBlocks.DRIFTSHALE_BRICKS));
+        // --- Driftshale Bricks ---
+        gen.registerCubeAllModelTexturePool(ModBlocks.DRIFTSHALE_BRICKS)
+                .stairs(ModBlocks.DRIFTSHALE_BRICKS_STAIRS)
+                .slab(ModBlocks.DRIFTSHALE_BRICKS_SLAB);
 
-        // Driftshale Tiles
-        gen.registerSimpleCubeAll(ModBlocks.DRIFTSHALE_TILES);
-        gen.registerStairs(ModBlocks.DRIFTSHALE_TILES_STAIRS, TexturedModel.CUBE_ALL.get(ModBlocks.DRIFTSHALE_TILES));
-        gen.registerSlab(ModBlocks.DRIFTSHALE_TILES_SLAB, ModBlocks.DRIFTSHALE_TILES_STAIRS, TexturedModel.CUBE_ALL.get(ModBlocks.DRIFTSHALE_TILES));
+        // --- Driftshale Tiles ---
+        gen.registerCubeAllModelTexturePool(ModBlocks.DRIFTSHALE_TILES)
+                .stairs(ModBlocks.DRIFTSHALE_TILES_STAIRS)
+                .slab(ModBlocks.DRIFTSHALE_TILES_SLAB);
 
-        // Cracked Driftshale Bricks
-        gen.registerSimpleCubeAll(ModBlocks.CRACKED_DRIFTSHALE_BRICKS);
-        gen.registerStairs(ModBlocks.CRACKED_DRIFTSHALE_BRICKS_STAIRS, TexturedModel.CUBE_ALL.get(ModBlocks.CRACKED_DRIFTSHALE_BRICKS));
-        gen.registerSlab(ModBlocks.CRACKED_DRIFTSHALE_BRICKS_SLAB, ModBlocks.CRACKED_DRIFTSHALE_BRICKS_STAIRS, TexturedModel.CUBE_ALL.get(ModBlocks.CRACKED_DRIFTSHALE_BRICKS));
+        // --- Cracked Driftshale Bricks ---
+        gen.registerCubeAllModelTexturePool(ModBlocks.CRACKED_DRIFTSHALE_BRICKS)
+                .stairs(ModBlocks.CRACKED_DRIFTSHALE_BRICKS_STAIRS)
+                .slab(ModBlocks.CRACKED_DRIFTSHALE_BRICKS_SLAB);
 
-        // Cracked Driftshale Tiles
-        gen.registerSimpleCubeAll(ModBlocks.CRACKED_DRIFTSHALE_TILES);
-        gen.registerStairs(ModBlocks.CRACKED_DRIFTSHALE_TILES_STAIRS, TexturedModel.CUBE_ALL.get(ModBlocks.CRACKED_DRIFTSHALE_TILES));
-        gen.registerSlab(ModBlocks.CRACKED_DRIFTSHALE_TILES_SLAB, ModBlocks.CRACKED_DRIFTSHALE_TILES_STAIRS, TexturedModel.CUBE_ALL.get(ModBlocks.CRACKED_DRIFTSHALE_TILES));
+        // --- Cracked Driftshale Tiles ---
+        gen.registerCubeAllModelTexturePool(ModBlocks.CRACKED_DRIFTSHALE_TILES)
+                .stairs(ModBlocks.CRACKED_DRIFTSHALE_TILES_STAIRS)
+                .slab(ModBlocks.CRACKED_DRIFTSHALE_TILES_SLAB);
 
-        // Red Algae Cobbled Driftshale
-        gen.registerSimpleCubeAll(ModBlocks.RED_ALGAE_COBBLED_DRIFTSHALE);
-        gen.registerStairs(ModBlocks.RED_ALGAE_COBBLED_DRIFTSHALE_STAIRS, TexturedModel.CUBE_ALL.get(ModBlocks.RED_ALGAE_COBBLED_DRIFTSHALE));
-        gen.registerSlab(ModBlocks.RED_ALGAE_COBBLED_DRIFTSHALE_SLAB, ModBlocks.RED_ALGAE_COBBLED_DRIFTSHALE_STAIRS, TexturedModel.CUBE_ALL.get(ModBlocks.RED_ALGAE_COBBLED_DRIFTSHALE));
+        // --- Red Algae Cobbled Driftshale ---
+        gen.registerCubeAllModelTexturePool(ModBlocks.RED_ALGAE_COBBLED_DRIFTSHALE)
+                .stairs(ModBlocks.RED_ALGAE_COBBLED_DRIFTSHALE_STAIRS)
+                .slab(ModBlocks.RED_ALGAE_COBBLED_DRIFTSHALE_SLAB);
 
-        // Red Algae Driftshale Bricks
-        gen.registerSimpleCubeAll(ModBlocks.RED_ALGAE_DRIFTSHALE_BRICKS);
-        gen.registerStairs(ModBlocks.RED_ALGAE_DRIFTSHALE_BRICKS_STAIRS, TexturedModel.CUBE_ALL.get(ModBlocks.RED_ALGAE_DRIFTSHALE_BRICKS));
-        gen.registerSlab(ModBlocks.RED_ALGAE_DRIFTSHALE_BRICKS_SLAB, ModBlocks.RED_ALGAE_DRIFTSHALE_BRICKS_STAIRS, TexturedModel.CUBE_ALL.get(ModBlocks.RED_ALGAE_DRIFTSHALE_BRICKS));
+        // --- Red Algae Driftshale Bricks ---
+        gen.registerCubeAllModelTexturePool(ModBlocks.RED_ALGAE_DRIFTSHALE_BRICKS)
+                .stairs(ModBlocks.RED_ALGAE_DRIFTSHALE_BRICKS_STAIRS)
+                .slab(ModBlocks.RED_ALGAE_DRIFTSHALE_BRICKS_SLAB);
 
-        // Red Algae Driftshale Tiles
-        gen.registerSimpleCubeAll(ModBlocks.RED_ALGAE_DRIFTSHALE_TILES);
-        gen.registerStairs(ModBlocks.RED_ALGAE_DRIFTSHALE_TILES_STAIRS, TexturedModel.CUBE_ALL.get(ModBlocks.RED_ALGAE_DRIFTSHALE_TILES));
-        gen.registerSlab(ModBlocks.RED_ALGAE_DRIFTSHALE_TILES_SLAB, ModBlocks.RED_ALGAE_DRIFTSHALE_TILES_STAIRS, TexturedModel.CUBE_ALL.get(ModBlocks.RED_ALGAE_DRIFTSHALE_TILES));
+        // --- Red Algae Driftshale Tiles ---
+        gen.registerCubeAllModelTexturePool(ModBlocks.RED_ALGAE_DRIFTSHALE_TILES)
+                .stairs(ModBlocks.RED_ALGAE_DRIFTSHALE_TILES_STAIRS)
+                .slab(ModBlocks.RED_ALGAE_DRIFTSHALE_TILES_SLAB);
 
-        // Driftshale Pillar
-        gen.registerLog(ModBlocks.DRIFTSHALE_PILLAR).log(ModBlocks.DRIFTSHALE_PILLAR);
+        // --- Driftshale Pillar (axis-rotatable, separate top and side textures) ---
+        gen.registerAxisRotated(ModBlocks.DRIFTSHALE_PILLAR, TexturedModel.END_FOR_TOP_COLUMNS);
     }
 
     @Override
     public void generateItemModels(ItemModelGenerator gen) {
+        // Bird poop and red algae use generated item models (flat sprite)
         gen.register(ModBlocks.BIRD_POOP.asItem(), Models.GENERATED);
         gen.register(ModBlocks.RED_ALGAE.asItem(), Models.GENERATED);
     }
