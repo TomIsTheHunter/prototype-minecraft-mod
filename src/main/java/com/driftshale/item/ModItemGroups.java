@@ -39,6 +39,9 @@ public class ModItemGroups {
                         entries.add(ModBlocks.CRACKED_DRIFTSHALE_TILES);
                         entries.add(ModBlocks.CRACKED_DRIFTSHALE_TILES_STAIRS);
                         entries.add(ModBlocks.CRACKED_DRIFTSHALE_TILES_SLAB);
+                        entries.add(ModBlocks.RED_ALGAE_DRIFTSHALE);
+                        entries.add(ModBlocks.RED_ALGAE_DRIFTSHALE_STAIRS);
+                        entries.add(ModBlocks.RED_ALGAE_DRIFTSHALE_SLAB);
                         entries.add(ModBlocks.RED_ALGAE_COBBLED_DRIFTSHALE);
                         entries.add(ModBlocks.RED_ALGAE_COBBLED_DRIFTSHALE_STAIRS);
                         entries.add(ModBlocks.RED_ALGAE_COBBLED_DRIFTSHALE_SLAB);

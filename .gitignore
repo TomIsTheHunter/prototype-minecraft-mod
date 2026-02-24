@@ -23,3 +23,22 @@
 hs_err_pid*
 replay_pid*
 .gradle/
+
+# Gradle
+build/
+gradle-8.8-bin.zip
+
+# IDE
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Runtime/Development
+run/
+src/main/generated/
+.java-version
+
+# OS
+.DS_Store
+Thumbs.db

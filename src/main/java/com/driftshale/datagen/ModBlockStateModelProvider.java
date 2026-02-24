@@ -16,8 +16,8 @@ public class ModBlockStateModelProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator gen) {
         // --- Nature blocks ---
-        // Bird Poop: multiface block (like glow lichen)
-        gen.registerMultifaceBlock(ModBlocks.BIRD_POOP);
+        // Bird Poop: simple block model
+        gen.registerSimpleCubeAll(ModBlocks.BIRD_POOP);
         // Red Algae: cross plant (same model for all waterlogged states)
         gen.registerTintableCross(ModBlocks.RED_ALGAE, BlockStateModelGenerator.TintType.NOT_TINTED);
 
@@ -56,6 +56,11 @@ public class ModBlockStateModelProvider extends FabricModelProvider {
                 .stairs(ModBlocks.CRACKED_DRIFTSHALE_TILES_STAIRS)
                 .slab(ModBlocks.CRACKED_DRIFTSHALE_TILES_SLAB);
 
+        // --- Red Algae Driftshale ---
+        gen.registerCubeAllModelTexturePool(ModBlocks.RED_ALGAE_DRIFTSHALE)
+                .stairs(ModBlocks.RED_ALGAE_DRIFTSHALE_STAIRS)
+                .slab(ModBlocks.RED_ALGAE_DRIFTSHALE_SLAB);
+
         // --- Red Algae Cobbled Driftshale ---
         gen.registerCubeAllModelTexturePool(ModBlocks.RED_ALGAE_COBBLED_DRIFTSHALE)
                 .stairs(ModBlocks.RED_ALGAE_COBBLED_DRIFTSHALE_STAIRS)
@@ -72,13 +77,13 @@ public class ModBlockStateModelProvider extends FabricModelProvider {
                 .slab(ModBlocks.RED_ALGAE_DRIFTSHALE_TILES_SLAB);
 
         // --- Driftshale Pillar (axis-rotatable, separate top and side textures) ---
-        gen.registerAxisRotated(ModBlocks.DRIFTSHALE_PILLAR, TexturedModel.END_FOR_TOP_COLUMNS);
+        gen.registerSimpleCubeAll(ModBlocks.DRIFTSHALE_PILLAR);
     }
 
     @Override
     public void generateItemModels(ItemModelGenerator gen) {
-        // Bird poop and red algae use generated item models (flat sprite)
+        // Bird poop uses generated item model (flat sprite)
         gen.register(ModBlocks.BIRD_POOP.asItem(), Models.GENERATED);
-        gen.register(ModBlocks.RED_ALGAE.asItem(), Models.GENERATED);
+        // RED_ALGAE is already registered via registerTintableCross in generateBlockStateModels
     }
 }

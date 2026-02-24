@@ -38,6 +38,9 @@ public class ModLanguageProvider extends FabricLanguageProvider {
         builder.add(ModBlocks.CRACKED_DRIFTSHALE_TILES, "Cracked Driftshale Tiles");
         builder.add(ModBlocks.CRACKED_DRIFTSHALE_TILES_STAIRS, "Cracked Driftshale Tiles Stairs");
         builder.add(ModBlocks.CRACKED_DRIFTSHALE_TILES_SLAB, "Cracked Driftshale Tiles Slab");
+        builder.add(ModBlocks.RED_ALGAE_DRIFTSHALE, "Red Algae Driftshale");
+        builder.add(ModBlocks.RED_ALGAE_DRIFTSHALE_STAIRS, "Red Algae Driftshale Stairs");
+        builder.add(ModBlocks.RED_ALGAE_DRIFTSHALE_SLAB, "Red Algae Driftshale Slab");
         builder.add(ModBlocks.RED_ALGAE_COBBLED_DRIFTSHALE, "Red Algae Cobbled Driftshale");
         builder.add(ModBlocks.RED_ALGAE_COBBLED_DRIFTSHALE_STAIRS, "Red Algae Cobbled Driftshale Stairs");
         builder.add(ModBlocks.RED_ALGAE_COBBLED_DRIFTSHALE_SLAB, "Red Algae Cobbled Driftshale Slab");

@@ -23,6 +23,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.DRIFTSHALE_TILES, ModBlocks.DRIFTSHALE_TILES_STAIRS, ModBlocks.DRIFTSHALE_TILES_SLAB)
                 .add(ModBlocks.CRACKED_DRIFTSHALE_BRICKS, ModBlocks.CRACKED_DRIFTSHALE_BRICKS_STAIRS, ModBlocks.CRACKED_DRIFTSHALE_BRICKS_SLAB)
                 .add(ModBlocks.CRACKED_DRIFTSHALE_TILES, ModBlocks.CRACKED_DRIFTSHALE_TILES_STAIRS, ModBlocks.CRACKED_DRIFTSHALE_TILES_SLAB)
+                .add(ModBlocks.RED_ALGAE_DRIFTSHALE, ModBlocks.RED_ALGAE_DRIFTSHALE_STAIRS, ModBlocks.RED_ALGAE_DRIFTSHALE_SLAB)
                 .add(ModBlocks.RED_ALGAE_COBBLED_DRIFTSHALE, ModBlocks.RED_ALGAE_COBBLED_DRIFTSHALE_STAIRS, ModBlocks.RED_ALGAE_COBBLED_DRIFTSHALE_SLAB)
                 .add(ModBlocks.RED_ALGAE_DRIFTSHALE_BRICKS, ModBlocks.RED_ALGAE_DRIFTSHALE_BRICKS_STAIRS, ModBlocks.RED_ALGAE_DRIFTSHALE_BRICKS_SLAB)
                 .add(ModBlocks.RED_ALGAE_DRIFTSHALE_TILES, ModBlocks.RED_ALGAE_DRIFTSHALE_TILES_STAIRS, ModBlocks.RED_ALGAE_DRIFTSHALE_TILES_SLAB)
@@ -36,6 +37,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.DRIFTSHALE_TILES, ModBlocks.DRIFTSHALE_TILES_STAIRS, ModBlocks.DRIFTSHALE_TILES_SLAB)
                 .add(ModBlocks.CRACKED_DRIFTSHALE_BRICKS, ModBlocks.CRACKED_DRIFTSHALE_BRICKS_STAIRS, ModBlocks.CRACKED_DRIFTSHALE_BRICKS_SLAB)
                 .add(ModBlocks.CRACKED_DRIFTSHALE_TILES, ModBlocks.CRACKED_DRIFTSHALE_TILES_STAIRS, ModBlocks.CRACKED_DRIFTSHALE_TILES_SLAB)
+                .add(ModBlocks.RED_ALGAE_DRIFTSHALE, ModBlocks.RED_ALGAE_DRIFTSHALE_STAIRS, ModBlocks.RED_ALGAE_DRIFTSHALE_SLAB)
                 .add(ModBlocks.RED_ALGAE_COBBLED_DRIFTSHALE, ModBlocks.RED_ALGAE_COBBLED_DRIFTSHALE_STAIRS, ModBlocks.RED_ALGAE_COBBLED_DRIFTSHALE_SLAB)
                 .add(ModBlocks.RED_ALGAE_DRIFTSHALE_BRICKS, ModBlocks.RED_ALGAE_DRIFTSHALE_BRICKS_STAIRS, ModBlocks.RED_ALGAE_DRIFTSHALE_BRICKS_SLAB)
                 .add(ModBlocks.RED_ALGAE_DRIFTSHALE_TILES, ModBlocks.RED_ALGAE_DRIFTSHALE_TILES_STAIRS, ModBlocks.RED_ALGAE_DRIFTSHALE_TILES_SLAB)
@@ -49,6 +51,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.DRIFTSHALE_TILES_SLAB)
                 .add(ModBlocks.CRACKED_DRIFTSHALE_BRICKS_SLAB)
                 .add(ModBlocks.CRACKED_DRIFTSHALE_TILES_SLAB)
+                .add(ModBlocks.RED_ALGAE_DRIFTSHALE_SLAB)
                 .add(ModBlocks.RED_ALGAE_COBBLED_DRIFTSHALE_SLAB)
                 .add(ModBlocks.RED_ALGAE_DRIFTSHALE_BRICKS_SLAB)
                 .add(ModBlocks.RED_ALGAE_DRIFTSHALE_TILES_SLAB);
@@ -61,6 +64,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.DRIFTSHALE_TILES_STAIRS)
                 .add(ModBlocks.CRACKED_DRIFTSHALE_BRICKS_STAIRS)
                 .add(ModBlocks.CRACKED_DRIFTSHALE_TILES_STAIRS)
+                .add(ModBlocks.RED_ALGAE_DRIFTSHALE_STAIRS)
                 .add(ModBlocks.RED_ALGAE_COBBLED_DRIFTSHALE_STAIRS)
                 .add(ModBlocks.RED_ALGAE_DRIFTSHALE_BRICKS_STAIRS)
                 .add(ModBlocks.RED_ALGAE_DRIFTSHALE_TILES_STAIRS);
